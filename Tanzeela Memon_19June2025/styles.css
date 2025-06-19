@@ -1,0 +1,211 @@
+/* General Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+
+
+}
+
+/* Sticky Header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.sticky-header h1 {
+  font-size: 1.8rem;
+}
+
+.sticky-header nav a {
+  color: #ddd;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sticky-header nav a:hover {
+  color: #fff;
+}
+.news-section h2 {
+  text-align: center;
+}
+
+
+/* Main Section */
+main {
+  padding: 2rem;
+}
+
+/* Newspaper Top Section */
+/* Newspaper Layout Container */
+.newspaper-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Main News Area */
+.main-news img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.main-news h3 {
+  margin-top: 0.5rem;
+}
+
+/* Side News Wrapper */
+.side-news-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Individual Side News Style */
+.side-news img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.side-news h4 {
+  margin-top: 0.5rem;
+}
+
+
+
+.main-news img,
+.side-news img,
+.news-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.main-news h3,
+.side-news h4,
+.news-card h3 {
+  margin: 0.7rem 0 0.4rem;
+}
+
+.main-news p,
+.side-news p,
+.news-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Side News Container */
+.side-news {
+  margin-bottom: 1.5rem;
+}
+
+/* News Grid Section */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* Card Styling */
+.news-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Section Headings */
+.news-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .newspaper-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .side-news {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Portfolio Section - Using Flexbox to center */
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  background-color: #f7f7f7;
+}
+
+/* Section Title */
+.portfolio-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Portfolio Grid - Using CSS Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Project Card Style */
+.project-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+  html {
+  scroll-behavior: smooth;
+}
