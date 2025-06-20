@@ -1,0 +1,169 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Light Theme */
+body.light {
+  background-image: url('./images/light.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #222;
+}
+
+/* Dark Theme */
+body.dark {
+  background-image: url('./images/dark.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f2f2f2;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* Theme Label */
+#theme-label {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider::before {
+  transform: translateX(28px);
+}
+
+/* Centered Container */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 2rem;
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+}
+
+/* Heading and Count */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#count {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.increment {
+  background-color: #4CAF50;
+}
+
+.decrement {
+  background-color: #f44336;
+}
+
+.reset {
+  background-color: #2196F3;
+}
+
+/* Dark Theme Button Colors */
+body.dark .increment {
+  background-color: #388e3c;
+}
+
+body.dark .decrement {
+  background-color: #d32f2f;
+}
+
+body.dark .reset {
+  background-color: #1976d2;
+}
+
+/* Action Message */
+#action-message {
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
