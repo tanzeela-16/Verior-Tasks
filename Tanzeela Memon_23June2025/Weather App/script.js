@@ -1,4 +1,4 @@
-const apiKey = '203dc1b1702c86010d076f60f97ab348';
+const apiKey = CONFIG.OPEN_WEATHER_API_KEY;
 
 const cityInput = document.getElementById('cityInput');
 const searchBtn = document.getElementById('searchBtn');
