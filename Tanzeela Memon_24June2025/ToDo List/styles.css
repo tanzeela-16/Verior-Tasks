@@ -1,0 +1,134 @@
+/* ====== Global Reset & Base ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 60px;
+  min-height: 100vh;
+}
+
+/* ====== Container ====== */
+.container {
+  background: #1c1022;
+  padding: 40px 45px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px #a020f050;
+  width: 500px; /* Increased width */
+  transition: 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  color: #bb3fff;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* ====== Input Section ====== */
+.input-section {
+  display: flex;
+  gap: 12px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2a1a3d;
+  color: #fff;
+  outline: none;
+  font-size: 15px;
+}
+
+/* ====== Add Button (Less Neon) ====== */
+button {
+  padding: 12px 16px;
+  background: #a020f0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 4px #a020f090;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #bb3fff;
+  box-shadow: 0 0 8px #bb3fff70;
+  transform: scale(1.04);
+}
+
+/* ====== Task List ====== */
+ul {
+  margin-top: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 14px;
+  background: #2d1a3f;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 0 6px #a020f030;
+}
+
+/* ====== Completed Task ====== */
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* ====== Button Group ====== */
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* ====== Complete Button (Subtle Glow) ====== */
+.complete-btn {
+  background: #6f2dbd;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 6px 10px;
+  box-shadow: 0 0 4px #6f2dbd70;
+  transition: 0.2s ease;
+}
+
+.complete-btn:hover {
+  background: #8e44ec;
+  box-shadow: 0 0 8px #8e44ec60;
+}
+
+/* ====== Delete Button (Soft Pink) ====== */
+.delete-btn {
+  background: #cc3366;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 6px 10px;
+  box-shadow: 0 0 4px #cc336670;
+  transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #ff4f91;
+  box-shadow: 0 0 8px #ff4f9170;
+}
