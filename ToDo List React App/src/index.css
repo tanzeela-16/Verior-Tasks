@@ -1,0 +1,133 @@
+/* Font and Reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f8ede3, #f9d5d3);
+  min-height: 100vh;
+}
+
+/* Main Container */
+.app-container {
+  max-width: 600px;
+  margin: 80px auto;
+  background: #fff8f0;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.8s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #8d6e63;
+}
+
+/* Form Styles */
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: 2px solid #e0bfb8;
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #bcaaa4;
+}
+
+.add-button {
+  padding: 12px 20px;
+  background: #d7a9a3;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-button:hover {
+  background: #a1887f;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fceeee;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border-left: 6px solid #d7a9a3;
+  transition: background 0.3s ease;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #8e8e8e;
+  background: #e7d2d2;
+  border-left-color: #a1887f;
+}
+
+.todo-text {
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+
+/* Buttons */
+.complete-btn,
+.delete-btn {
+  padding: 8px 14px;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.complete-btn {
+  background: #a5d6a7;
+  color: white;
+}
+
+.complete-btn:hover {
+  background: #81c784;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background: #ef9a9a;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #e57373;
+  transform: scale(1.05);
+}
