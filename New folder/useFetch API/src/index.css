@@ -1,0 +1,78 @@
+/* Base Dark Theme */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+}
+
+/* Container */
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #4fc3f7;
+  border-bottom: 2px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #aaa;
+}
+
+/* Product List */
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-card {
+  background-color: #2a2a3d;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  background-color: #33334d;
+}
+
+.product-card strong {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #81d4fa;
+}
+
+.product-card p {
+  margin: 0;
+  color: #ccc;
+}
+
+/* Loading/Error */
+.loading,
+.error {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.loading {
+  color: #4fc3f7;
+}
+
+.error {
+  color: #ef5350;
+}
