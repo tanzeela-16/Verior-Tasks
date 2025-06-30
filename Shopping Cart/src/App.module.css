@@ -1,0 +1,9 @@
+.mainContent {
+  display: flex;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.cartOpen {
+  margin-right: 320px; /* match your sidebar width */
+}
