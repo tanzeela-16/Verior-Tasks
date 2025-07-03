@@ -1,28 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// Import images
-import dashboardImg from "../assets/dashboard.png";
-import profileCardImg from "../assets/profile-card.png";
-import shoppingCartImg from "../assets/shopping-cart.png";
-
 const projects = [
   {
     title: "Admin Dashboard",
     description: "Custom dashboard with charts, analytics, and UI components.",
-    image: dashboardImg,
+    image: "/dashboard.PNG",
     link: "https://github.com/tanzeela-16/Verior-Tasks/tree/main/Admin%20Dashboard",
   },
   {
     title: "Profile Card",
     description: "Animated profile card with hover effects and clean design.",
-    image: profileCardImg,
+    image: "/profile-card.PNG",
     link: "https://github.com/tanzeela-16/Verior-Tasks/tree/main/Profile%20Card",
   },
   {
     title: "Shopping Cart UI",
     description: "Interactive shopping cart with item count and dynamic price updates.",
-    image: shoppingCartImg,
+    image: "/shopping-cart.PNG",
     link: "https://github.com/tanzeela-16/Verior-Tasks/tree/main/Shopping%20Cart",
   },
 ];
